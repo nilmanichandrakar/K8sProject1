@@ -105,6 +105,15 @@ Ensure that grafana page ```http://localhost:3000/``` is accessible.
 * Open the ```log.html``` file to view detailed test results.
 
 ### Grafana Dashboard Snapshots
+![image](https://github.com/user-attachments/assets/29838546-279a-4a5a-b930-e75580bfe6b7)
+
+![image](https://github.com/user-attachments/assets/25e34098-a48e-42ca-88fe-a8bc7b474ee6)
+
+![image](https://github.com/user-attachments/assets/2e707eb8-26ad-4077-ba8c-48a680982454)
+
+
+
+
 
 ### Conclusion
 This project automates the setup and verification of data between MariaDB and Grafana, demonstrating the power of Robot Framework for testing in a Kubernetes environment. The automation can be extended to cover more test scenarios and data validations.
