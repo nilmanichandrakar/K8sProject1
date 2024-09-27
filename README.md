@@ -77,6 +77,15 @@ Ensure that both Grafana and MariaDB pods are in a ```Running``` state.
 ```
 Ensure that grafana page ```http://localhost:3000/``` is accessible.
 
+#### 6. Deploy insert-data-job:
+``` bash
+/grafana-test$ kubectl apply -f insert-data-job.yaml
+```
+#### 7. Push Docker Image to dockerhub:
+``` bash
+/grafana-test$ docker push neel8801/insert-data-job:latest
+```
+
 ### Python Project with Robot Framework
 #### 1. Load Data into MariaDB
   * Use the insert_data.py script to insert known data into a table in MariaDB.
