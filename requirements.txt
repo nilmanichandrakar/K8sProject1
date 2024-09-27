@@ -1,0 +1,28 @@
+# FastAPI and related libraries for API exposure
+fastapi
+uvicorn[standard]
+pydantic
+
+# Robot Framework and libraries for automation
+robotframework
+robotframework-requests
+robotframework-databaselibrary
+robotframework-seleniumlibrary 
+
+# MariaDB connector
+pymysql
+
+# Grafana API client
+grafanalib  # For configuring Grafana dashboards programmatically
+
+# Kubernetes Python client to interact with K8s cluster
+kubernetes
+
+# Requests library for interacting with REST APIs
+requests
+
+# Selenium WebDriver for interacting with browsers
+selenium
+
+# YAML parsing (for reading K8s YAML files if needed)
+pyyaml
