@@ -1,0 +1,61 @@
+{
+    "dashboard": {
+        "id": null,
+        "uid": null,
+        "title": "New Dashboard",
+        "tags": ["test"],
+        "timezone": "browser",
+        "schemaVersion": 16,
+        "version": 0,
+        "refresh": "5s",
+        "panels": [
+            {
+                "type": "graph",
+                "title": "CPU Usage",
+                "gridPos": {
+                    "x": 0,
+                    "y": 0,
+                    "w": 12,
+                    "h": 8
+                },
+                "datasource": "${DS_MYSQL}",
+                "targets": [
+                    {
+                        "rawSql": "SELECT timestamp_utc AS time, temperature AS value FROM measurements ORDER BY timestamp_utc DESC LIMIT 50",
+                        "refId": "A"
+                    }
+                ],
+                "xaxis": {
+                    "mode": "time",
+                    "name": null,
+                    "show": true
+                },
+                "yaxis": {
+                    "format": "short",
+                    "logBase": 1,
+                    "show": true
+                }
+            }
+        ],
+        "templating": {
+            "list": []
+        },
+        "annotations": {
+            "list": [
+                {
+                    "builtIn": 1,
+                    "datasource": "grafana",
+                    "enable": true,
+                    "hide": true,
+                    "iconColor": "rgba(0, 211, 255, 1)",
+                    "name": "Annotations & Alerts",
+                    "type": "dashboard"
+                }
+            ]
+        },
+        "time": {
+            "from": "now-1h",
+            "to": "now"
+        }
+    }
+}

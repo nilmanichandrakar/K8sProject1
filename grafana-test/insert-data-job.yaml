@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: insert-data-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: insert-data
+        image: neel8801/insert-data-job
+        env:
+          - name: DB_HOST
+            value: "mariadb-service"
+          - name: DB_USER
+            value: "root"
+          - name: DB_PASSWORD
+            value: "password"
+          - name: DB_NAME
+            value: "testdb"
+      restartPolicy: Never
+  backoffLimit: 2
