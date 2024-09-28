@@ -40,7 +40,6 @@ This project demonstrates how to use Robot Framework to automate the setup and v
 │   ├── validate_dashboad.robot  
 │   ├── keywords.robot             # Robot Framework combined keywords
 │   └── grafana-tests.robot        # Robot Framework combined test cases
-├── Dockerfile                    # Dockerfile for Robot Framework automation
 ├── requirements.txt              # Python dependencies
 └── README.md                     # Project documentation
 ```
