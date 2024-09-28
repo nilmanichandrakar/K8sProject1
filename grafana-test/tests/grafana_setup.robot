@@ -4,7 +4,7 @@ Resource    keywords.robot
 
 *** Variables ***
 ${GRAFANA_URL}  http://localhost:3000
-${API_KEY}    Bearer glsa_ZyajE3mnPsPiUMWIu7qFK5Gp7GXYqU4j_6d1e76e4
+${API_KEY}    Bearer glsa_ZyafsgshjkfjE3mnPsPiUMWInhfffu7qFK5Gjdkdlfp7GXYdjfkduqU4j_6d1dj27y40e76e4
 ${DB_HOST}    mariadb-service
 ${DB_USER}    root
 ${DB_PASS}    password
