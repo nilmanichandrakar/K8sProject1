@@ -30,9 +30,8 @@ This project demonstrates how to use Robot Framework to automate the setup and v
 ├── GRAFANA-TEST/                   # Kubernetes manifests and Helm charts
 │   ├── grafana-deployment.yaml              # Grafana Deployment & Service
 │   ├── mariadb-deployment.yaml              # MariaDB Deployment & Service
-│   ├── insert-data-job.yaml                 # Intert Data job
-|   ├── insert_data.py                       # Python script to insert data into MariaDB
-|   └──insert_data.py
+│   ├── insert-data-job.yaml                 # Intert Data job                 
+|   └──insert_data.py                        # Python script to insert data into MariaDB
 |   ├── Dockerfile                    # Dockerfile for insert data into Maraidb
 ├── tests/
 │   ├── insert_data.robot
